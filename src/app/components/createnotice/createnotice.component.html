@@ -1,0 +1,56 @@
+<div style="margin: auto;">
+    <mat-toolbar color="primary">
+        <span>NOTICE APP</span>
+    </mat-toolbar>
+    <div>
+        <form>
+            <table style="margin: auto;">
+                <tr class="myrow">
+                    <td class="enter">
+                        Enter Title:        
+                    </td>
+                    <td>
+                        <input [(ngModel)]="title"  placeholder="Add Title" name="title">    
+                    </td>
+                </tr>
+                <tr class="myrow">
+                    <td class="enter">
+                        Enter Description:  
+                    </td>
+                    <td>
+                        <input [(ngModel)]="description" placeholder="Add Description" name="description">
+                    </td> 
+                </tr>
+                <tr class="myrow">
+                    <td class="enter">
+                        Enter Department:        
+                    </td>
+                    <td>
+                        <input [(ngModel)]="dept"  placeholder="CSE / ME / ECE (capital case)" name="dept">
+                    </td>
+                </tr>
+                <tr class="myrow">
+                    <td class="enter">
+                        Name of the Submitee:        
+                    </td>
+                    <td>
+                        <input [(ngModel)]="nameofs"  placeholder="Add Name" name="nameofs">    
+                    </td>
+                </tr>
+                <tr class="myrow">
+                    <td class="enter">
+                        Enter Date:
+                    </td>
+                    <td class="enter">
+                        <input type="date" [(ngModel)]="item_date" name="item_date">
+                    </td>
+                </tr>
+                <tr class="myrow">
+                    <td></td>
+                    <td>
+                        <button mat-raised-button color="primary" type="submit" *ngIf="title!=='' && description!=='' && dept!=='' && nameofs!==''" (click)="addItem($event)">Add Todo</button>
+                    </td>
+                </tr>    
+            </table>
+        </form>
+    </div>

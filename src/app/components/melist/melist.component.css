@@ -1,0 +1,30 @@
+div{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top:25px;
+}
+
+.notice-table{
+    border-collapse: collapse;
+    margin-top:25px;
+    margin: auto;
+    font-size:0.9em;
+    min-width:400px;
+}
+
+.notice-table thead tr{
+    background-color: rgb(117, 70, 192) ;
+    color:#ffffff;
+    text-align:left;
+    font-weight:bold;
+}
+
+.notice-table th, .notice-table td{
+    padding:12px 15px;
+}
+
+.notice-table tbody tr{
+   border-bottom:1px solid #dddddd;
+}
+
+

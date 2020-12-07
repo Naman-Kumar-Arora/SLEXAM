@@ -1,0 +1,25 @@
+<div>
+    <table class="notice-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Submitted By</th>
+                <th>Dept</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let notice of noticeDetails; let i=index">
+            <tr>
+                <td>{{notice.id}}</td>
+                <td>{{notice.title}}</td>
+                <td>{{notice.description}}</td>
+                <td>{{notice.nameofs}}</td>
+                <td>{{notice.dept}}</td>
+                <td>{{notice.item_date|date:'yyyy-MMM-dd'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
